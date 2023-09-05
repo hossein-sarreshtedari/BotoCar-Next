@@ -1,0 +1,218 @@
+@import "./colors";
+@import "./Effects";
+
+
+.topHome {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.searchDiv{
+
+    margin-top: 3rem;
+    width: 500px;
+}
+
+.FilterDiv {
+
+   
+
+    display: flex;
+    background-color: inherit;
+    box-shadow: rgba(0, 0, 0, 0.094) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.037) 0px 0px 0px 1px inset;
+    border-radius: 5PX;
+    padding: 0.5rem 5px;
+
+
+    .inputs {
+
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    input {
+
+        outline: none;
+        padding: 3.5px .5rem;
+        border: 1px solid #c1c1c174;
+        border-radius: 5px;
+        transition: all 0.2s;
+
+        &:hover,
+        &:focus {
+
+            border: 1px solid $mainColor;
+        }
+    }
+
+    input:nth-child(1) {
+
+        margin-bottom: 6px;
+    }
+
+    button {
+
+        margin-left: 5px;
+        background-color: $mainColor;
+        border: 1px solid #c1c1c174;
+        border-radius: 5px;
+        outline: none;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        
+        @include hoverStyleBtn() ;
+
+    }
+
+}
+
+
+
+
+.carsCategory {
+
+
+    margin-top: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    background-color: inherit;
+    box-shadow: rgba(0, 0, 0, 0.094) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.037) 0px 0px 0px 1px inset;
+    border-radius: 5PX;
+    padding: 0.5rem 5px;
+
+
+    .cart{
+        
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $mainColor;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #eee;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+        @include hoverStyleBtn() ;
+        
+
+    }
+
+
+    #svgCart{
+
+        width: 50px;
+        height: auto;
+        pointer-events: none;
+
+    }
+}
+
+
+
+.seeAll{
+
+    margin-top: 0.5rem;
+
+    width: 500px;
+    background-color: $mainColor;
+    height: 35px;
+    border: none;
+    font-weight: bold;
+    border: 1px solid #d1d1d15b;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+    @include hoverStyleBtn() ;
+}
+
+
+@media(max-width : 800px){
+
+    .searchDiv {
+
+        margin-top: 1rem;
+        width: calc(100% - 1rem)
+       
+    
+    }
+
+    .carsCategory {
+
+
+        margin-top: 1rem;
+        width: calc(100% - 1rem);
+
+        justify-content: initial;
+        
+    
+        .cart{
+            
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 0.8rem;
+    
+        }
+    
+    
+        #svgCart{
+    
+            width: 40px;
+            height: auto;
+            pointer-events: none;
+    
+        }
+    }
+
+
+    .parentSeeAll{
+
+        width: calc(100% - 1rem);
+    }
+
+    .seeAll{
+
+       
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

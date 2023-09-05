@@ -1,0 +1,20 @@
+@import "./colors";
+
+.NorCarDiv{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+
+    span {
+
+
+        background-color: #939393 ;
+        padding: 1rem 4rem;
+        
+    }
+
+}
+

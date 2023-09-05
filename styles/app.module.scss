@@ -1,0 +1,139 @@
+@import "./colors";
+
+.container{
+
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+    
+}
+
+.mainContainer{
+
+    width: 1400px;
+    margin: 0 auto;
+    transition: all 0.2s;
+    
+}
+
+
+.headerDiv{
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+.header{
+
+    width: 500px;
+    background-color: $mainColor;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem 0;
+    user-select: none;
+    color: $textColorHeader;
+    box-shadow: rgba(60, 64, 67, 0.156) 0px 1px 2px 0px, rgba(60, 64, 67, 0.082) 0px 1px 3px 1px;
+    
+    
+
+    h1{
+
+        font-size: 2.3rem;
+        font-weight: bold;
+        border-bottom: 1.5px solid #008000;
+        padding-bottom: 5px;
+        cursor: pointer;
+       
+    }
+
+    span{
+
+        display: inline-block;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+}
+
+
+.footerDiv{
+
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #4b4b4b;
+    user-select: none;
+    padding: 8px;
+
+    span{
+
+        color: #c5c5c5;
+        font-size: 0.9rem;
+        
+
+    }
+}
+
+
+@media(max-width : 1400px){
+
+    .mainContainer{
+
+        width: 1300px;
+        
+    }
+
+}
+
+
+
+@media(max-width : 1300px){
+
+    .mainContainer{
+
+        width: 1000px;
+        
+    }
+
+}
+
+
+@media(max-width : 1000px){
+
+    .mainContainer{
+
+        width: 800px;
+        
+    }
+
+}
+
+
+
+@media(max-width : 800px){
+
+    .mainContainer{
+
+        width: calc(100% - 1rem);
+      
+        
+    }
+
+    .header{
+
+        width: calc(100% - 1rem);
+        
+    
+        h1{
+    
+            font-size: 1.7rem;
+        }
+    
+    
+    }
+
+}

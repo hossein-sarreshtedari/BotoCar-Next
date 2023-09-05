@@ -1,0 +1,126 @@
+@import "../styles/colors";
+@import "../styles/Effects";
+
+.singleCarDiv{
+
+
+    width: 700px;
+    margin: 0 auto;
+   
+
+    margin-top: 3rem;
+}
+
+.picSingleCart{
+
+    width: inherit !important;
+    pointer-events: none !important;
+    user-select: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+   
+}
+
+.NameCar{
+
+    font-size: 1.3rem;
+    padding: 1.5rem 0;
+}
+
+
+.carData{
+
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    margin-bottom: 1.5rem;
+}
+
+
+.itemData{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+
+    .iconText{
+
+        display: flex;
+        align-items: center;
+    }
+
+    .text{
+
+        font-size: 0.9rem;
+    }
+
+
+}
+
+.valueText{
+
+    font-size: 0.9rem;
+    color: #5a5a5a;
+}
+
+
+.svgIcons{
+
+    width: 22px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.descrip{
+
+    line-height: 1.6rem;
+    text-align: justify;
+    color: #333333;
+}
+
+#MonySvg{
+
+    width: 40px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.butBtn{
+
+    width: 100%;
+    border: none;
+    background-color: $mainColor;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    padding: 8px 5px;
+    font-size: 1.5rem;
+    color: #333333;
+    cursor: pointer;
+
+    @include hoverStyleBtn();
+}
+
+
+@media(max-width : 800px){
+
+
+    .singleCarDiv{
+
+
+        width: calc(100% - 1rem);
+        margin-top: 2rem;
+    }
+
+
+    .picSingleCart{
+
+        width: 100% !important ;
+      
+       
+    }
+    
+
+    
+}
+

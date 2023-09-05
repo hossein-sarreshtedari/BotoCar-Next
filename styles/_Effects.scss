@@ -1,0 +1,15 @@
+
+@mixin hoverStyleBtn {
+
+    transition: all 0.1s;
+
+    &:hover{
+
+        transform: scale(0.98);
+    }
+
+    &:active{
+
+        transform: scale(0.93);
+    }
+}
