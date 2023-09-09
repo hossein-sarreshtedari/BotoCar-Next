@@ -6,7 +6,7 @@ import styles from "@/styles/filterPage.module.scss";
 //dependencys
 import { useRouter } from 'next/router';
 import BackBtnDiv from '@/shared/BackBtnDiv';
-import ShowCars from '@/shared/ShowCars';
+import ShowCars from '@/components/templates/ShowCars';
 
 const filterKey = ({ carsData }) => {
 

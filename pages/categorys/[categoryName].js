@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
 
 
 //shared
-import ShowCars from '@/shared/ShowCars';
+import ShowCars from '@/components/templates/ShowCars';
 import BackBtnDiv from '@/shared/BackBtnDiv';
 
 const categoryName = ({carsData}) => {

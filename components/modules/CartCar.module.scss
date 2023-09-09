@@ -1,17 +1,5 @@
-@import "../styles/colors";
-.cars{
 
-    width: 100%;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
-    
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(auto , 400px));
-    grid-gap: 1.5rem;
-    justify-content: center;
-
-}
+@import "../../styles/colors";
 
 
 .cartCars{
@@ -116,19 +104,7 @@
 
 @media(max-width : 800px){
 
-    .cars{
 
-        width:100%;
-        margin-top: 2rem;
-     
-        
-    
-        display: grid;
-        grid-template-columns: repeat(auto-fit , minmax(auto , 400px));
-        grid-gap: 0;
-        justify-content: center;
-    
-    }
 
     .cartCars{
 

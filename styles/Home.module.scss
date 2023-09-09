@@ -11,7 +11,7 @@
 }
 
 
-.searchDiv{
+.searchDiv {
 
     margin-top: 3rem;
     width: 500px;
@@ -19,7 +19,7 @@
 
 .FilterDiv {
 
-   
+
 
     display: flex;
     background-color: inherit;
@@ -65,8 +65,8 @@
         padding: 10px;
         font-weight: bold;
         cursor: pointer;
-        
-        @include hoverStyleBtn() ;
+
+        @include hoverStyleBtn();
 
     }
 
@@ -89,8 +89,8 @@
     padding: 0.5rem 5px;
 
 
-    .cart{
-        
+    .cart {
+
         width: 120px;
         display: flex;
         flex-direction: column;
@@ -103,13 +103,13 @@
         font-weight: bold;
         cursor: pointer;
         user-select: none;
-        @include hoverStyleBtn() ;
-        
+        @include hoverStyleBtn();
+
 
     }
 
 
-    #svgCart{
+    #svgCart {
 
         width: 50px;
         height: auto;
@@ -120,7 +120,7 @@
 
 
 
-.seeAll{
+.seeAll {
 
     margin-top: 0.5rem;
 
@@ -134,56 +134,55 @@
     cursor: pointer;
 
 
-    @include hoverStyleBtn() ;
+    @include hoverStyleBtn();
 }
 
 
-@media(max-width : 800px){
+@media(max-width : 800px) {
 
     .searchDiv {
 
         margin-top: 1rem;
         width: calc(100% - 1rem)
-       
-    
     }
 
     .carsCategory {
+
 
 
         margin-top: 1rem;
         width: calc(100% - 1rem);
 
         justify-content: initial;
-        
-    
-        .cart{
-            
+
+
+        .cart {
+
             width: 100%;
             padding: 0.8rem;
             font-size: 0.8rem;
-    
+
         }
-    
-    
-        #svgCart{
-    
+
+
+        #svgCart {
+
             width: 40px;
             height: auto;
             pointer-events: none;
-    
+
         }
     }
 
 
-    .parentSeeAll{
+    .parentSeeAll {
 
         width: calc(100% - 1rem);
     }
 
-    .seeAll{
+    .seeAll {
 
-       
+
         margin-top: 0.5rem;
         width: 100%;
     }
@@ -192,27 +191,14 @@
 
 }
 
+@media(max-width : 420px) {
 
 
 
+    .carsCategory {
 
 
+        flex-wrap: wrap;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

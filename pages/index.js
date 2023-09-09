@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 //shared
-import ShowCars from "@/shared/ShowCars";
+import ShowCars from "@/components/templates/ShowCars";
 
 const Home = ({ carsData }) => {
 
